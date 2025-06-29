@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Medicine Request Generator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Medicine Request Generator</h1>
+  <a href="sample.csv" download="sample.csv" class="btn">Download CSV Sample</a>
+
+  <section id="upload">
+    <label>Upload CSV (Doctor,Medicine):</label>
+    <input type="file" id="csvFile" accept=".csv" />
+    <small>Format: DoctorName,MedicineName (one per line)</small>
+  </section>
+
+  <section id="formSection" style="display:none;">
+    <label>Person Name:</label>
+    <input type="text" id="patientName" placeholder="Enter name" />
+
+    <label>Place:</label>
+    <input type="text" id="placeInfo" placeholder="e.g., Amit C-712" />
+
+    <label>Contact:</label>
+    <input type="text" id="contactInfo" placeholder="e.g., 9819271169" />
+
+    <div id="medicinesContainer"></div>
+
+    <div class="button-row">
+      <button id="generateBtn">Generate</button>
+      <button id="printBtn">Print</button>
+      <button id="emailBtn">Email</button>
+    </div>
+  </section>
+
+  <section id="outputSection" style="display:none;">
+    <h2>Medicine Request</h2>
+    <div id="requestContainer"></div>
+    <button id="downloadBtn">Download PNG</button>
+  </section>
+
+  <script src="papaparse.min.js"></script>
+  <script src="html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

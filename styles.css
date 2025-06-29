@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 16px;
+}
+h1 { text-align: center; }
+.btn {
+  display: block;
+  margin: 8px auto;
+  padding: 8px 16px;
+  background: #2196F3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+section { margin-top: 16px; }
+label {
+  display: block;
+  margin-top: 12px;
+}
+input { width: 100%; padding: 8px; font-size: 1rem; }
+.small, small { font-size: 0.8rem; color: #555; }
+#medicinesContainer { margin-top: 16px; }
+.medicine-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 6px 0;
+}
+.medicine-item input[type="number"] { width: 80px; margin-left: auto; }
+.doctor-card {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+}
+.button-row {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.button-row button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  background: #1976D2;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#requestContainer {
+  background: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+#requestContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+#requestContainer th, td {
+  border: 1px solid #333;
+  padding: 8px;
+}
+@media (min-width: 600px) {
+  .medicine-item { flex-wrap: nowrap; }
+}
